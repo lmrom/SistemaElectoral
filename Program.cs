@@ -1,4 +1,7 @@
-﻿string[] lines = {
+﻿int sw= Console.WindowWidth;
+int wh= Console.WindowHeight;
+
+string[] lines = {
             "  .d8888.  d888888b  .d8888.   d888888b  d88888b .88b  d88.   .d8b.  ",
             " 88'  YP    `88'    88'  YP   `~~88~~'  88'     88'YbdP`88  d8' `8b ",
             " `8bo.       88     `8bo.        88     88ooooo 88  88  88  88ooo88 ",
@@ -16,8 +19,19 @@
 
 foreach (string line in lines)
 {
-    int space = (Console.WindowWidth - line.Length) / 2;
+    int space = (sw - line.Length) / 2;
     Console.WriteLine(new string(' ', space) + line);
 }
 
-Console.WriteLine("Bienvenido al sistema electoral más poderoso de México, rápido eficáz y seguro, todos ls votos registrados cuentan con un certificado de validación.");
+string lineDec = new string('-', sw);
+int votantes = ('1');
+
+Console.WriteLine($"\n" + lineDec + "\n");
+Console.WriteLine($"Votantes : {votantes} ");
+Console.WriteLine($"\n" + lineDec);
+
+
+
+
+
+Console.WriteLine("\nBienvenido al Sistema Electoral recuerda que tu voto es libre y secreto, recuerda votar a conciencia.");
