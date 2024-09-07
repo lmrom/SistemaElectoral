@@ -1,5 +1,5 @@
 ﻿int sw= Console.WindowWidth;
-int wh= Console.WindowHeight;
+int sh= Console.WindowHeight;
 
 string[] lines = {
             "  .d8888.  d888888b  .d8888.   d888888b  d88888b .88b  d88.   .d8b.  ",
@@ -23,6 +23,8 @@ foreach (string line in lines)
     Console.WriteLine(new string(' ', space) + line);
 }
 
+Console.WriteLine("\nBienvenido al Sistema Electoral recuerda que tu voto es libre y secreto, recuerda votar a conciencia.");
+
 string lineDec = new string('-', sw);
 int votantes = ('1');
 
@@ -34,4 +36,4 @@ Console.WriteLine($"\n" + lineDec);
 
 
 
-Console.WriteLine("\nBienvenido al Sistema Electoral recuerda que tu voto es libre y secreto, recuerda votar a conciencia.");
+
